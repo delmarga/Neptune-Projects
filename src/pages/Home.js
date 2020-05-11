@@ -15,7 +15,7 @@ function Home() {
           productive and better organized. They communicate better and require
           fewer meetings. And they're far more efficient than before.
         </p>
-        <Link to="/signup" className="btn btn-primary hero-button">
+        <Link to="/signup" className="btn btn-primary signup-button">
           Sign Up
         </Link>
       </div>

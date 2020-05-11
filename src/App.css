@@ -6,9 +6,17 @@ body {
 }
 
 /* Homepage */
+.header-signup {
+  background-color: #07a254;
+  color: #ffffff;
+}
+.header-signup:hover {
+  background-color: #0fb863;
+  color: #333333;
+}
 .hero {
   width: 700px;
-  margin: 200px auto 0 auto;
+  margin: 160px auto 0 auto;
   text-align: center;
 }
 h1.subtitle {
@@ -23,18 +31,59 @@ h1.subtitle {
   font-weight: 700;
   margin-bottom: 16px;
 }
-
 .lead-copy {
   text-align: left;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-.btn-primary.hero-button {
+.signup-button {
   float: left;
   background-color: #07a254;
   color: #ffffff;
 }
-.btn-primary.hero-button:hover {
+.signup-button:hover {
   background-color: #0fb863;
+  color: #333333;
+}
+
+/* Login page */
+.login-page {
+  width: 350px;
+  border: 1px solid #b8b8b8;
+  box-sizing: border-box;
+  margin-top: 100px;
+  padding: 20px 45px 30px 45px;
+}
+.form-label {
+  float: left;
+}
+h4.logo {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.form-login button {
+  background: #07a254;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form-login button:hover {
+  background: #0fb863;
+  color: #333333;
+}
+.form-login {
+  max-width: 300px;
+}
+p.account {
+  font-size: 14px;
+}
+a.login-signup {
+  color: #07a254;
+  margin-left: 4px;
+}
+a.login-signup:hover {
+  color: #333333;
+  text-decoration: none;
 }
