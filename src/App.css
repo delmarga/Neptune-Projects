@@ -47,9 +47,9 @@ h1.subtitle {
   color: #333333;
 }
 
-/* Login page */
+/* Login & Signup page */
 .login-page {
-  width: 350px;
+  width: 400px;
   border: 1px solid #b8b8b8;
   box-sizing: border-box;
   margin-top: 100px;
