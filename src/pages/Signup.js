@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -11,17 +11,24 @@ function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const history = useHistory();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const data = {
       firstName,
       lastName,
       email,
       password,
     };
+
     axios
       .post("http://localhost:5000/api/v1/users/signup", data)
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        history.push("/login");
+      })
       .catch((err) => console.log(err));
 
     setFirstName("");
